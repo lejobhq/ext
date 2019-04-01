@@ -9,8 +9,14 @@
   },
   "permissions": [
     "activeTab",
-    "tabs"
+    "tabs",
+    "webRequest",
+    "webRequestBlocking",
+    "https://example.com/*"
   ],
+  "background": {
+    "scripts": ["background/request.js"]
+  },
   "browser_action": {
     "browser_style": true,
     "default_icon": {
